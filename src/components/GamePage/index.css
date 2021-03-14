@@ -1,0 +1,10 @@
+
+.gamePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ff5155;
+}
+.currentWord{
+    text-align: center;
+}

@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+.WelcomePage{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 100px 0px 100px;
+}
+.header img{
+    width: 150px;
+    height: 100px;
+}
+.fast-fingers{
+    font-size: 60px;
+    color: #ff5155;
+    margin: 0 0 0 0;
+}
+.seperator{
+    color: #ff5155;
+    margin: 0 0 0 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 0 0;
+}
+.seperator{
+    display: flex;
+    align-items: flex-end;
+}
+.seperator:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ff5155;
+    left: 0;
+    top: 50%;
+    margin-bottom: 5px;
+}
+.seperator:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ff5155;
+    right: 0;
+    top: 50%; 
+    margin-bottom: 5px;
+}
+
+.form-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 100px 0px 100px;
+    width: 100%;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+}
+input[type="text"]{
+    opacity: 0.59;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
+    background-color: #ffffff;
+    font-size: 25px;
+    padding: 10px 100px 10px 10px;
+}
+.form-field select{
+    font-size: 30px;
+    color: #97a5a7;
+    padding: 10px 110px 10px 10px;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
+    border: solid 1px #ffffff;
+}
+.start-game{
+    animation: pulse 1s infinite;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    align-items: center;
+    color: #ff5155;
+    margin: 50px 0 0 80px;
+    padding: 0 0 0 0;
+}
+.start-game img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
+}
+.form-field option{
+    background-color: rgb(206, 198, 206);
+}
+
+.error{
+    color: #ff5155;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      color: black;
+    }
+    50% {
+      color: #ff5155;
+    }
+    100% {
+        color: black;
+    }
+  }
